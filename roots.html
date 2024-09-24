@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+    		<meta charset="UTF-8">
+    		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    		<title>Корни онлайн</title>
+			<script src="langs.js"></script>
+			<script src="decimal.js"></script>
+			<script src="complex.js"></script>
+		    <script src="main.js"></script>
+            <style type ="text/css" >
+                .footer{
+                    position:fixed;
+                    left:45%;
+                    bottom: 0px;
+                }  
+             </style>
+
+	</head>
+	
+
+
+	<body bgcolor="#FAFAD2" vlink="#000000">
+		<center>
+			<img src="logo.png" width="200">
+			<details id="instructions">
+				<summary id="instructions title"></summary>
+			</details>
+			<p id="select title">Выберите режим вычислений</p>
+			<select oninput="onSelect(this.value)">
+				<option value=0 id="mode1">Рациональные</option>
+				<option value=1 id="mode2">Комплексные</option>
+			</select>
+			<p id="accuracy title">Выберите точность (количество знаков после запятой)</p>
+			<input id="accuracy" type="number" placeholder="10" onchange="onSelectAccuracy(this)">
+			<p id="c1"></p>
+			<p id="input title">Введите выражение: </p>
+			<input id="input" type="text" name="username" onchange="onInput(this.value);">
+			<button id="button" class="languages-buttonText" onclick="onEval()">Вычислить!</button>
+			</p>
+			<p id="c2"></p>
+			<p id="result title">Результат:</p>
+			<p id="result"></p>
+			<p id="c3"></p>
+			<br>
+			<br>
+			<br>
+            <div class="footer">
+			    <select id="selectlang">
+					<option value="ru" selected>RUS</option>
+					<option value="en">ENG</option>
+				</select>
+			    <button class="languages-questions">Вопросы</button>
+            </div>
+		</center>  
+		<script src="app.js"></script>
+	</body>
+</html>
