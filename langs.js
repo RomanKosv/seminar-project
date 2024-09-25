@@ -10,8 +10,8 @@ langArr = {
         "en": "Calculate!",
     },
     "questions": {
-        "ru": "Вопросы",
-        "en": "Questions",
+        "ru": "Если у вас возникли вопросы, обращайтесь на нашу почту:",
+        "en": "In case you have any other questions, feel free to ask them here:",
     },
     complex_not_parse_c2:{
         ru:"комплексное число должно иметь форму a+bi,где a и b - числа в десятичной записи. Пожалуйста, измените ввод",
